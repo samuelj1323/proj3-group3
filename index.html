@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pabu</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridly/1.1.0/gridly.min.css" type="text/css" charset="utf-8">-->
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+  
+  
+</head>
+
+<body>
+  
+  <nav>
+    <div class="nav-wrapper">
+      
+      <a href="#!" class="brand-logo">Pabu</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Search</a></li>
+        <li><a href="badges.html">My Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Search</a></li>
+    <li><a href="badges.html">My Portfolio</a></li>
+  </ul>
+  <div class="container">
+  <div class="row">
+    <div class="input-field col s11">
+      <input id="search" type="text" >
+      <label for="search">Search Stock Name</label>
+    </div>
+    <div class="input-field col s1">
+      <a id="search-btn" class="waves-effect waves-light btn"><i class="material-icons">search</i></a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <canvas id="stockChart" width="200" height="100"></canvas>
+</div>
+<div class="container">
+  <div class="row">
+    <div id="tweets" class="col s12">
+      <h2>Tweets</h2>
+      
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div id="sentiments" class="col s12">
+      <h2>Sentiment Analysis</h2>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div id="sentimentPie"></div>
+</div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row remove-bottom-margin">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+      
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <div class="sidenav-overlay"></div><div class="drag-target"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <script src="ui-controls.js"></script>
+  <script src="./twitterAPI/Output.js"></script>
+  <script src="stocks.js"></script>
+  <script src="sentimentxml.js"></script>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+  <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+  
+
+</body>
+
+</html>
